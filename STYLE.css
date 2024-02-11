@@ -1,0 +1,1285 @@
+html {
+  font-size: 0.97vmin;
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 0.9vmin;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 0.7vmin;
+  }
+}
+@media (orientation: portrait) and (max-width: 400px) {
+  rotate {
+    transform: rotate(-35deg);
+  }
+  text {
+    transform: translate3d(24rem, 100rem, 0) !important;
+  }
+  html {
+    font-size: 0.95vmin;
+  }
+}
+body {
+  margin: auto;
+  background: #ead9c9;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+body i,
+body i:before,
+body i:after {
+  transform-style: preserve-3d;
+  display: block;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  transition: all 0.5s ease-in-out;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+art {
+  transform-style: preserve-3d;
+  perspective: 195rem;
+  perspective-origin: 27% -14%;
+  height: 100rem;
+  width: 100%;
+  max-width: 139rem;
+}
+
+xaxis,
+yaxis,
+art,
+rotate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+@media (max-width: 600px) {
+  pipe {
+    transform: translate3d(12rem, 15rem, 10rem) rotateY(5deg) rotate(-90deg);
+  }
+}
+x {
+  width: 33.3333333333%;
+  height: 33.3333333333%;
+  z-index: 1;
+}
+
+.pic x {
+  display: none;
+}
+
+body:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50% 0;
+  box-shadow: 8vw 8vh 0 #a06353 , 84vw 40vh 0 #a06353 , 96vw 57vh 0 #a06353 , 51vw 80vh 0 #b48072 , 64vw 38vh 0 #a06353 , 33vw 95vh 0 #a06353 , 49vw 46vh 0 #a06353 , 83vw 60vh 0 #a06353 , 25vw 85vh 0 #a06353 , 95vw 38vh 0 #a06353 , 86vw 29vh 0 #a06353 , 46vw 12vh 0 #b48072 , 49vw 47vh 0 #a06353 , 13vw 8vh 0 #b48072 , 5vw 61vh 0 #b48072 , 62vw 36vh 0 #a06353 , 54vw 71vh 0 #a06353 , 26vw 45vh 0 #b48072 , 26vw 3vh 0 #b48072 , 37vw 58vh 0 #b48072 , 81vw 95vh 0 #b48072 , 90vw 74vh 0 #b48072 , 95vw 97vh 0 #a06353 , 5vw 74vh 0 #b48072 , 61vw 22vh 0 #a06353 , 94vw 43vh 0 #a06353 , 72vw 50vh 0 #a06353 , 79vw 16vh 0 #b48072 , 24vw 71vh 0 #a06353 , 9vw 50vh 0 #b48072 , 19vw 71vh 0 #b48072 , 24vw 18vh 0 #a06353 , 15vw 8vh 0 #b48072 , 11vw 6vh 0 #a06353 , 38vw 50vh 0 #a06353 , 78vw 34vh 0 #b48072 , 7vw 92vh 0 #a06353 , 12vw 33vh 0 #b48072 , 52vw 22vh 0 #a06353 , 64vw 45vh 0 #a06353 , 21vw 58vh 0 #a06353 , 36vw 61vh 0 #a06353 , 67vw 6vh 0 #a06353 , 34vw 75vh 0 #a06353 , 6vw 48vh 0 #a06353 , 39vw 91vh 0 #a06353 , 64vw 68vh 0 #a06353 , 30vw 11vh 0 #a06353 , 32vw 40vh 0 #b48072 , 68vw 81vh 0 #a06353 , 91vw 81vh 0 #a06353 , 11vw 19vh 0 #b48072 , 43vw 28vh 0 #a06353 , 26vw 8vh 0 #b48072 , 8vw 29vh 0 #b48072 , 79vw 41vh 0 #a06353 , 62vw 54vh 0 #a06353 , 14vw 2vh 0 #a06353 , 44vw 2vh 0 #b48072 , 58vw 78vh 0 #b48072 , 56vw 84vh 0 #b48072 , 100vw 95vh 0 #a06353 , 12vw 73vh 0 #b48072 , 43vw 22vh 0 #a06353 , 35vw 92vh 0 #a06353 , 44vw 2vh 0 #a06353 , 52vw 90vh 0 #b48072 , 68vw 76vh 0 #a06353 , 76vw 66vh 0 #b48072 , 24vw 3vh 0 #b48072 , 52vw 82vh 0 #a06353 , 22vw 87vh 0 #b48072 , 25vw 44vh 0 #b48072 , 66vw 86vh 0 #b48072 , 35vw 97vh 0 #a06353 , 11vw 6vh 0 #a06353 , 17vw 1vh 0 #a06353 , 26vw 79vh 0 #a06353 , 43vw 27vh 0 #b48072 , 59vw 37vh 0 #b48072 , 50vw 47vh 0 #b48072 , 7vw 12vh 0 #b48072 , 44vw 64vh 0 #a06353 , 87vw 88vh 0 #a06353 , 9vw 86vh 0 #a06353 , 30vw 23vh 0 #b48072 , 99vw 20vh 0 #a06353 , 93vw 72vh 0 #b48072 , 35vw 90vh 0 #b48072 , 17vw 73vh 0 #b48072 , 94vw 49vh 0 #a06353 , 79vw 37vh 0 #b48072 , 99vw 60vh 0 #a06353 , 97vw 31vh 0 #b48072 , 65vw 68vh 0 #a06353 , 4vw 33vh 0 #a06353 , 22vw 79vh 0 #b48072 , 98vw 2vh 0 #a06353 , 39vw 40vh 0 #b48072 , 73vw 81vh 0 #a06353 , 41vw 57vh 0 #b48072 , 91vw 44vh 0 #a06353 , 47vw 92vh 0 #a06353 , 17vw 83vh 0 #a06353 , 50vw 6vh 0 #a06353 , 32vw 93vh 0 #a06353 , 73vw 86vh 0 #a06353 , 66vw 19vh 0 #b48072 , 6vw 92vh 0 #a06353 , 42vw 46vh 0 #a06353 , 23vw 64vh 0 #a06353 , 77vw 74vh 0 #b48072 , 24vw 51vh 0 #b48072 , 69vw 57vh 0 #a06353 , 99vw 46vh 0 #a06353 , 24vw 79vh 0 #b48072 , 77vw 88vh 0 #b48072 , 14vw 52vh 0 #b48072 , 11vw 13vh 0 #a06353 , 96vw 29vh 0 #a06353 , 73vw 2vh 0 #a06353 , 95vw 32vh 0 #b48072 , 19vw 11vh 0 #a06353 , 96vw 24vh 0 #a06353 , 95vw 46vh 0 #b48072 , 47vw 30vh 0 #a06353 , 62vw 29vh 0 #a06353 , 57vw 35vh 0 #a06353 , 20vw 64vh 0 #a06353 , 80vw 89vh 0 #b48072 , 95vw 22vh 0 #b48072 , 36vw 67vh 0 #a06353 , 69vw 78vh 0 #b48072 , 14vw 29vh 0 #b48072 , 60vw 59vh 0 #a06353 , 93vw 77vh 0 #a06353 , 58vw 18vh 0 #a06353 , 37vw 70vh 0 #b48072 , 44vw 22vh 0 #b48072 , 78vw 39vh 0 #b48072 , 87vw 31vh 0 #b48072 , 12vw 94vh 0 #b48072 , 67vw 59vh 0 #a06353 , 95vw 77vh 0 #a06353 , 63vw 23vh 0 #a06353 , 51vw 9vh 0 #a06353 , 9vw 56vh 0 #a06353 , 35vw 67vh 0 #b48072 , 26vw 95vh 0 #b48072 , 26vw 2vh 0 #a06353 , 70vw 96vh 0 #a06353 , 100vw 72vh 0 #a06353 , 72vw 37vh 0 #a06353 , 70vw 63vh 0 #a06353 , 9vw 45vh 0 #b48072 , 10vw 57vh 0 #a06353 , 32vw 50vh 0 #a06353 , 18vw 79vh 0 #a06353 , 81vw 4vh 0 #b48072 , 1vw 47vh 0 #b48072 , 61vw 27vh 0 #b48072 , 78vw 88vh 0 #a06353 , 64vw 43vh 0 #b48072 , 8vw 64vh 0 #a06353 , 40vw 76vh 0 #a06353 , 15vw 14vh 0 #a06353 , 21vw 57vh 0 #b48072 , 33vw 92vh 0 #a06353 , 8vw 75vh 0 #b48072 , 2vw 41vh 0 #b48072 , 1vw 18vh 0 #a06353 , 18vw 8vh 0 #b48072 , 19vw 4vh 0 #a06353 , 83vw 81vh 0 #a06353 , 67vw 55vh 0 #b48072 , 53vw 1vh 0 #a06353 , 62vw 45vh 0 #a06353 , 93vw 88vh 0 #a06353 , 72vw 26vh 0 #b48072 , 29vw 74vh 0 #a06353 , 7vw 96vh 0 #b48072 , 100vw 20vh 0 #b48072 , 36vw 21vh 0 #b48072 , 1vw 1vh 0 #b48072 , 51vw 47vh 0 #b48072 , 42vw 68vh 0 #b48072 , 61vw 35vh 0 #a06353 , 71vw 100vh 0 #b48072 , 47vw 74vh 0 #b48072 , 40vw 76vh 0 #a06353 , 84vw 47vh 0 #a06353 , 20vw 55vh 0 #b48072 , 18vw 81vh 0 #a06353 , 28vw 85vh 0 #a06353 , 77vw 72vh 0 #b48072 , 44vw 7vh 0 #b48072 , 21vw 56vh 0 #b48072 , 32vw 24vh 0 #a06353 , 68vw 96vh 0 #a06353 , 86vw 28vh 0 #a06353 , 23vw 45vh 0 #a06353 , 89vw 65vh 0 #b48072 , 24vw 46vh 0 #a06353 , 84vw 75vh 0 #a06353 , 29vw 41vh 0 #b48072 , 69vw 1vh 0 #b48072 , 86vw 85vh 0 #b48072 , 98vw 40vh 0 #a06353 , 92vw 36vh 0 #b48072 , 6vw 61vh 0 #a06353 , 69vw 11vh 0 #a06353 , 73vw 32vh 0 #a06353 , 36vw 4vh 0 #b48072 , 28vw 35vh 0 #b48072 , 33vw 26vh 0 #b48072 , 69vw 41vh 0 #b48072 , 28vw 69vh 0 #a06353 , 81vw 80vh 0 #b48072 , 11vw 37vh 0 #a06353 , 18vw 33vh 0 #b48072 , 20vw 84vh 0 #b48072 , 67vw 42vh 0 #a06353 , 82vw 57vh 0 #a06353 , 5vw 65vh 0 #a06353 , 45vw 53vh 0 #b48072 , 51vw 4vh 0 #b48072 , 86vw 24vh 0 #a06353 , 98vw 14vh 0 #a06353 , 83vw 91vh 0 #b48072 , 21vw 98vh 0 #a06353 , 70vw 20vh 0 #b48072 , 34vw 60vh 0 #a06353 , 95vw 6vh 0 #a06353 , 92vw 43vh 0 #a06353 , 32vw 97vh 0 #b48072 , 67vw 38vh 0 #a06353 , 67vw 6vh 0 #b48072 , 40vw 52vh 0 #a06353 , 53vw 3vh 0 #b48072 , 90vw 69vh 0 #a06353 , 16vw 24vh 0 #b48072 , 88vw 6vh 0 #a06353 , 32vw 68vh 0 #b48072 , 46vw 67vh 0 #a06353 , 56vw 83vh 0 #a06353 , 87vw 8vh 0 #a06353 , 57vw 76vh 0 #a06353 , 100vw 35vh 0 #b48072 , 90vw 59vh 0 #a06353 , 31vw 7vh 0 #b48072 , 98vw 90vh 0 #a06353 , 55vw 48vh 0 #a06353 , 89vw 11vh 0 #b48072 , 74vw 27vh 0 #b48072 , 79vw 8vh 0 #a06353 , 80vw 62vh 0 #a06353 , 80vw 38vh 0 #b48072 , 17vw 90vh 0 #a06353 , 55vw 61vh 0 #a06353 , 57vw 43vh 0 #b48072 , 31vw 23vh 0 #a06353 , 56vw 56vh 0 #b48072 , 96vw 65vh 0 #a06353 , 49vw 20vh 0 #b48072 , 26vw 83vh 0 #a06353 , 42vw 68vh 0 #b48072 , 97vw 69vh 0 #a06353 , 41vw 24vh 0 #b48072 , 21vw 43vh 0 #a06353 , 49vw 69vh 0 #a06353 , 83vw 24vh 0 #a06353 , 14vw 97vh 0 #b48072 , 46vw 59vh 0 #a06353 , 59vw 15vh 0 #a06353 , 63vw 8vh 0 #a06353 , 62vw 68vh 0 #a06353 , 55vw 98vh 0 #a06353 , 21vw 100vh 0 #a06353 , 83vw 21vh 0 #b48072 , 100vw 53vh 0 #b48072 , 18vw 95vh 0 #a06353 , 68vw 71vh 0 #b48072 , 14vw 9vh 0 #a06353 , 48vw 8vh 0 #a06353 , 80vw 89vh 0 #a06353 , 37vw 54vh 0 #b48072 , 94vw 55vh 0 #a06353 , 73vw 55vh 0 #a06353 , 61vw 46vh 0 #a06353 , 41vw 24vh 0 #a06353 , 89vw 21vh 0 #b48072 , 39vw 6vh 0 #b48072 , 37vw 13vh 0 #b48072 , 59vw 74vh 0 #b48072 , 100vw 6vh 0 #b48072 , 98vw 66vh 0 #b48072 , 94vw 94vh 0 #b48072 , 6vw 41vh 0 #a06353 , 2vw 96vh 0 #a06353 , 59vw 14vh 0 #b48072 , 99vw 38vh 0 #b48072 , 49vw 52vh 0 #a06353 , 47vw 28vh 0 #a06353 , 6vw 76vh 0 #b48072 , 5vw 80vh 0 #a06353 , 100vw 99vh 0 #b48072 , 15vw 99vh 0 #a06353 , 86vw 32vh 0 #b48072 , 55vw 97vh 0 #b48072 , 60vw 51vh 0 #a06353 , 63vw 7vh 0 #b48072 , 22vw 91vh 0 #b48072 , 2vw 44vh 0 #b48072 , 9vw 94vh 0 #a06353 , 7vw 29vh 0 #b48072 , 19vw 73vh 0 #a06353 , 70vw 74vh 0 #a06353 , 20vw 51vh 0 #b48072 , 51vw 31vh 0 #a06353 , 30vw 63vh 0 #b48072 , 67vw 27vh 0 #b48072 , 94vw 96vh 0 #b48072 , 29vw 92vh 0 #b48072 , 38vw 81vh 0 #b48072 , 70vw 62vh 0 #b48072 , 85vw 89vh 0 #a06353 , 48vw 36vh 0 #a06353 , 99vw 63vh 0 #a06353 , 37vw 86vh 0 #a06353 , 68vw 70vh 0 #a06353 , 3vw 15vh 0 #b48072 , 42vw 32vh 0 #b48072 , 62vw 50vh 0 #b48072 , 12vw 15vh 0 #b48072 , 33vw 17vh 0 #b48072 , 57vw 15vh 0 #b48072 , 80vw 21vh 0 #a06353 , 86vw 87vh 0 #b48072 , 71vw 49vh 0 #a06353 , 71vw 92vh 0 #a06353 , 35vw 43vh 0 #a06353 , 15vw 26vh 0 #a06353 , 12vw 48vh 0 #b48072 , 17vw 92vh 0 #b48072 , 59vw 56vh 0 #a06353 , 89vw 58vh 0 #a06353 , 28vw 99vh 0 #b48072 , 29vw 86vh 0 #a06353 , 85vw 71vh 0 #a06353 , 77vw 48vh 0 #a06353 , 96vw 13vh 0 #b48072 , 31vw 81vh 0 #a06353 , 8vw 50vh 0 #b48072 , 29vw 3vh 0 #a06353 , 28vw 75vh 0 #b48072 , 30vw 64vh 0 #b48072 , 75vw 44vh 0 #a06353 , 11vw 61vh 0 #b48072 , 39vw 13vh 0 #a06353 , 19vw 23vh 0 #b48072 , 55vw 52vh 0 #b48072 , 82vw 100vh 0 #a06353 , 19vw 38vh 0 #b48072 , 28vw 95vh 0 #b48072 , 68vw 33vh 0 #b48072 , 27vw 61vh 0 #a06353 , 8vw 92vh 0 #b48072 , 96vw 31vh 0 #b48072 , 56vw 62vh 0 #b48072 , 38vw 21vh 0 #b48072 , 61vw 96vh 0 #a06353 , 48vw 18vh 0 #b48072 , 89vw 91vh 0 #a06353 , 55vw 83vh 0 #b48072 , 70vw 40vh 0 #b48072 , 21vw 22vh 0 #b48072 , 95vw 48vh 0 #a06353 , 33vw 88vh 0 #a06353 , 8vw 62vh 0 #a06353 , 64vw 27vh 0 #a06353 , 100vw 1vh 0 #b48072 , 6vw 99vh 0 #a06353 , 26vw 97vh 0 #b48072 , 30vw 50vh 0 #b48072 , 52vw 29vh 0 #b48072 , 90vw 98vh 0 #b48072 , 81vw 17vh 0 #a06353 , 2vw 30vh 0 #a06353 , 18vw 34vh 0 #a06353 , 43vw 36vh 0 #b48072 , 28vw 92vh 0 #b48072 , 29vw 2vh 0 #a06353 , 71vw 4vh 0 #a06353 , 18vw 86vh 0 #b48072 , 75vw 81vh 0 #b48072 , 57vw 14vh 0 #b48072 , 82vw 100vh 0 #a06353 , 81vw 40vh 0 #a06353 , 77vw 16vh 0 #a06353 , 98vw 16vh 0 #b48072 , 40vw 93vh 0 #a06353 , 90vw 75vh 0 #b48072 , 3vw 34vh 0 #b48072 , 3vw 1vh 0 #a06353 , 87vw 30vh 0 #a06353 , 56vw 45vh 0 #b48072 , 28vw 63vh 0 #b48072 , 31vw 43vh 0 #b48072 , 30vw 68vh 0 #b48072 , 10vw 38vh 0 #b48072 , 91vw 82vh 0 #a06353 , 30vw 65vh 0 #b48072 , 48vw 55vh 0 #b48072 , 80vw 1vh 0 #b48072 , 13vw 43vh 0 #b48072 , 69vw 71vh 0 #a06353 , 5vw 99vh 0 #b48072 , 72vw 47vh 0 #b48072 , 25vw 7vh 0 #b48072 , 54vw 64vh 0 #a06353 , 16vw 100vh 0 #a06353 , 93vw 19vh 0 #b48072 , 87vw 4vh 0 #b48072 , 4vw 89vh 0 #a06353 , 27vw 72vh 0 #a06353 , 62vw 89vh 0 #b48072 , 67vw 83vh 0 #b48072 , 76vw 36vh 0 #a06353 , 27vw 100vh 0 #b48072 , 50vw 83vh 0 #b48072 , 77vw 26vh 0 #b48072 , 63vw 73vh 0 #a06353 , 32vw 29vh 0 #b48072 , 34vw 10vh 0 #a06353 , 1vw 46vh 0 #a06353 , 50vw 9vh 0 #b48072 , 45vw 41vh 0 #b48072 , 69vw 58vh 0 #b48072 , 20vw 97vh 0 #a06353 , 20vw 27vh 0 #a06353 , 50vw 52vh 0 #b48072 , 30vw 38vh 0 #a06353 , 8vw 37vh 0 #a06353 , 20vw 89vh 0 #b48072 , 18vw 2vh 0 #a06353 , 56vw 45vh 0 #b48072 , 19vw 49vh 0 #a06353 , 33vw 30vh 0 #a06353 , 27vw 97vh 0 #a06353 , 55vw 54vh 0 #a06353 , 64vw 13vh 0 #a06353 , 51vw 75vh 0 #b48072 , 1vw 53vh 0 #b48072 , 65vw 22vh 0 #a06353 , 44vw 48vh 0 #b48072 , 96vw 35vh 0 #b48072 , 90vw 43vh 0 #a06353 , 4vw 16vh 0 #a06353 , 60vw 56vh 0 #a06353 , 89vw 84vh 0 #b48072 , 90vw 94vh 0 #b48072 , 79vw 35vh 0 #a06353 , 71vw 94vh 0 #b48072 , 92vw 36vh 0 #a06353 , 8vw 39vh 0 #b48072 , 99vw 95vh 0 #b48072 , 40vw 16vh 0 #b48072 , 14vw 42vh 0 #a06353 , 24vw 99vh 0 #b48072 , 20vw 90vh 0 #b48072 , 60vw 97vh 0 #a06353 , 9vw 42vh 0 #b48072 , 34vw 80vh 0 #a06353 , 50vw 24vh 0 #a06353 , 14vw 32vh 0 #b48072 , 69vw 62vh 0 #b48072 , 8vw 76vh 0 #a06353 , 66vw 92vh 0 #b48072 , 24vw 6vh 0 #a06353 , 25vw 2vh 0 #a06353 , 67vw 72vh 0 #a06353 , 63vw 85vh 0 #a06353 , 1vw 92vh 0 #a06353 , 57vw 24vh 0 #b48072 , 59vw 56vh 0 #b48072 , 18vw 1vh 0 #b48072 , 60vw 15vh 0 #b48072 , 15vw 84vh 0 #a06353 , 4vw 79vh 0 #b48072 , 80vw 98vh 0 #a06353 , 25vw 90vh 0 #a06353 , 62vw 18vh 0 #a06353 , 99vw 4vh 0 #b48072 , 37vw 25vh 0 #b48072 , 95vw 85vh 0 #b48072 , 4vw 41vh 0 #a06353 , 74vw 83vh 0 #a06353 , 7vw 73vh 0 #a06353 , 65vw 73vh 0 #b48072 , 50vw 87vh 0 #b48072;
+  opacity: 0.05;
+}
+
+text {
+  transform: translate3d(24rem, 85rem, 0);
+  display: flex !important;
+  flex-wrap: wrap;
+}
+text div:nth-of-type(1) {
+  width: 60rem;
+  height: 10rem;
+}
+text div:nth-of-type(1) i:nth-of-type(1) {
+  width: 0.7rem;
+  height: 0.8rem;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.25rem -0.2rem 0 #000, 0.5rem -0.4rem 0 #000, 0.7rem -0.7rem 0 0.05rem #000, 0.7rem -1rem 0 #000, 0.7rem -1.2rem 0 -0.05rem #000, 0.6rem -1.4rem 0 -0.075rem #000, 0.5rem -1.6rem 0 -0.075rem #000, 0.35rem -1.8rem 0 -0.075rem #000, 0.1rem -2rem 0 -0.075rem #000, -0.1rem -2.1rem 0 -0.075rem #000, -0.3rem -2.05rem 0 -0.075rem #000;
+}
+text div:nth-of-type(1) i:nth-of-type(1):before {
+  width: 6rem;
+  height: 8.5rem;
+  transform: translate3d(-3rem, -2.5rem, 0) rotate(26deg) skewX(-4deg);
+  border-radius: 50%;
+  border: 0.7rem solid #000;
+  border-right-color: rgba(255, 255, 255, 0);
+  border-top-color: rgba(255, 255, 255, 0);
+}
+text div:nth-of-type(1) i:nth-of-type(1):after {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(-5.1rem, 4.3rem, 0) rotate(38deg);
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0.1rem -0.3rem 0 #000, 0.2rem -0.7rem 0 0.05rem #000, 0.2rem -1.2rem 0 0.05rem #000, 0.21rem -1.6rem 0 0.05rem #000, 0.22rem -2.1rem 0 0.075rem #000;
+}
+text div:nth-of-type(1) i:nth-of-type(2) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(4rem, 2.5rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.25rem -0.3rem 0 #000, 0.4rem -0.6rem 0 #000, 0.5rem -0.9rem 0 #000, 0.55rem -1.3rem 0 -0.05rem #000, 0.3rem -1.6rem 0 #000, 0rem -1.6rem 0 0.05rem #000, -0.3rem -1.5rem 0 #000, -0.6rem -1.4rem 0 #000, -0.9rem -1.3rem 0 #000;
+}
+text div:nth-of-type(1) i:nth-of-type(2):before {
+  width: 5.5rem;
+  height: 0.63rem;
+  transform: translate3d(-4.9rem, 1.3rem, 0) rotate(-28deg);
+  background: #000;
+  border-radius: 0.3rem;
+}
+text div:nth-of-type(1) i:nth-of-type(2):after {
+  width: 5rem;
+  height: 4rem;
+  border: 0.7rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-left-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  transform: translate3d(-2.7rem, -1.3rem, 0) rotate(93deg) skewY(20deg);
+}
+text div:nth-of-type(1) i:nth-of-type(3) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(8.2rem, 1.8rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.25rem -0.3rem 0 #000, 0.25rem -0.6rem 0 0.05rem #000, 0.1rem -0.8rem 0 0.05rem #000, -0.2rem -1.1rem 0 0.05rem #000, -0.5rem -1.1rem 0 0.02rem #000, -0.8rem -1rem 0 0.02rem #000, -1.1rem -0.8rem 0 0.02rem #000;
+}
+text div:nth-of-type(1) i:nth-of-type(3):before {
+  width: 3rem;
+  height: 0.62rem;
+  transform: translate3d(-4.8rem, 2.3rem, 0) rotate(-35deg);
+  background: #000;
+  border-radius: 0.3rem;
+}
+text div:nth-of-type(1) i:nth-of-type(3):after {
+  border: 0.7rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-left-color: rgba(255, 255, 255, 0);
+  width: 5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  transform: translate3d(-2.7rem, -1rem, 0) rotate(93deg) skewY(20deg);
+}
+text div:nth-of-type(1) i:nth-of-type(4) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(12rem, -0.9rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.2rem -0.1rem 0 0.02rem #000, -0.8rem 2rem 0 0.02rem #000, -0.85rem 5.8rem 0 #000, -0.6rem 5.7rem 0 -0.02rem #000, -0.4rem 5.6rem 0 -0.05rem #000;
+}
+text div:nth-of-type(1) i:nth-of-type(4):before {
+  width: 2.5rem;
+  height: 0.62rem;
+  transform: translate3d(-3.8rem, 4.7rem, 0) rotate(-35deg);
+  background: #000;
+  border-radius: 0.3rem;
+}
+text div:nth-of-type(1) i:nth-of-type(4):after {
+  border: 0.7rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-right-color: rgba(255, 255, 255, 0);
+  width: 2.5rem;
+  height: 4.8rem;
+  border-radius: 1rem 0 2.5rem 2.5rem;
+  transform: translate3d(-1.7rem, 1.9rem, 0) rotate(26.5deg) skewY(-13deg);
+}
+text div:nth-of-type(1) i:nth-of-type(5) {
+  width: 0.5rem;
+  height: 0.6rem;
+  transform: translate3d(22.5rem, 4.6rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.2rem -0.1rem 0 -0.02rem #000, 0.4rem -0.2rem 0 -0.05rem #000, 0.6rem -0.3rem 0 -0.08rem #000, -0.2rem 0.1rem 0 0.02rem #000, -0.6rem 0.1rem 0 0.05rem #000, -0.8rem -0.3rem 0 #000, -1.8rem -3.57rem 0 #000, -1.6rem -3.7rem 0 #000, -1.3rem -3.85rem 0 0.05rem #000, -3.9rem -3.4rem 0 -0.05rem #000, -4.1rem -3.3rem 0 -0.05rem #000, -4.4rem -3.1rem 0 -0.075rem #000, -4.6rem -3rem 0 -0.1rem #000;
+}
+text div:nth-of-type(1) i:nth-of-type(5):before {
+  border: 0.7rem solid #000;
+  border-bottom-color: rgba(255, 255, 255, 0);
+  border-left-color: rgba(255, 255, 255, 0);
+  width: 2.5rem;
+  height: 5.5rem;
+  border-radius: 2.5rem 2.5rem 1rem 0;
+  transform: translate3d(-4.9rem, -4.1rem, 0) rotate(24deg) skewY(-35deg);
+}
+text div:nth-of-type(1) i:nth-of-type(5):after {
+  border: 0.7rem solid #000;
+  border-bottom-color: rgba(255, 255, 255, 0);
+  border-left-color: rgba(255, 255, 255, 0);
+  width: 2.5rem;
+  height: 4.5rem;
+  border-radius: 2.5rem 2.5rem 1rem 0;
+  transform: translate3d(-2.2rem, -4.1rem, 0) rotate(21deg) skewY(-2deg);
+}
+text div:nth-of-type(1) i:nth-of-type(6) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(29.2rem, 2rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.25rem -0.3rem 0 #000, 0.4rem -0.6rem 0 #000, 0.5rem -0.9rem 0 #000, 0.55rem -1.3rem 0 -0.05rem #000, 0.3rem -1.6rem 0 #000, 0rem -1.7rem 0 #000, -0.4rem -1.6rem 0 #000, -0.7rem -1.45rem 0 #000, -1.1rem -1.3rem 0 #000;
+}
+text div:nth-of-type(1) i:nth-of-type(6):before {
+  width: 3.3rem;
+  height: 0.63rem;
+  transform: translate3d(-2.9rem, 0.7rem, 0) rotate(-23deg);
+  background: #000;
+  border-radius: 0.3rem;
+}
+text div:nth-of-type(1) i:nth-of-type(6):after {
+  width: 5.5rem;
+  height: 4.5rem;
+  border: 0.7rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-left-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  transform: translate3d(-2.7rem, -1.5rem, 0) rotate(87deg) skewY(16deg);
+}
+text div:nth-of-type(1) i:nth-of-type(7) {
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: translate3d(32rem, 3.75rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: -0.35rem 0.15rem 0 -0.05rem #000, -0.5rem 0.4rem 0 -0.15rem #000;
+}
+text div:nth-of-type(1) i:nth-of-type(7):before {
+  width: 5.5rem;
+  height: 0.8rem;
+  transform: translate3d(-3.1rem, -1.4rem, 0) rotate(-51deg) skewX(-20deg);
+  background: #000;
+  border-radius: 0.1rem 0.2rem 50% 50%/0.1rem 0.2rem 0.6rem 0.4rem;
+}
+text div:nth-of-type(1) i:nth-of-type(7):after {
+  width: 2.75rem;
+  height: 4.3rem;
+  border: 0.7rem solid #000;
+  border-top: 0.2rem solid rgba(255, 255, 255, 0);
+  border-left: 0.2rem solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  transform: translate3d(-0.7rem, -2.6rem, 0) rotate(-5deg) skewY(-13deg) skewX(5deg);
+}
+text div:nth-of-type(1) i:nth-of-type(8) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(37rem, -1rem, 0);
+  background: #000;
+  border-radius: 50%;
+}
+text div:nth-of-type(1) i:nth-of-type(8):before {
+  width: 2.5rem;
+  height: 0.62rem;
+  transform: translate3d(-1rem, 1.5rem, 0) rotate(9deg) skewY(-29deg);
+  background: #000;
+  border-radius: 0.3rem;
+}
+text div:nth-of-type(1) i:nth-of-type(8):after {
+  border: 0.5rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-right: none;
+  border-bottom: 0.7rem solid #000;
+  border-radius: 0 0 0.5rem 1.5rem/0 0 1.5rem 2.5rem;
+  width: 2rem;
+  height: 7rem;
+  transform: translate3d(-1rem, -0.3rem, 0) rotate(20deg) skewY(-34deg);
+}
+text div:nth-of-type(1) i:nth-of-type(9) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(25.9rem, 0.8rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: -0.1rem 0.3rem 0 -0.1rem #000, -0.2rem 0.5rem 0 -0.15rem #000, -0.35rem 0.65rem 0 -0.2rem #000, -0.4rem 0.75rem 0 -0.2rem #000, -0.5rem 0.85rem 0 -0.2rem #000, -0.6rem 0.95rem 0 -0.25rem #000, -0.7rem 1rem 0 -0.25rem #000;
+}
+text div:nth-of-type(1) i:nth-of-type(9):before {
+  width: 5.5rem;
+  height: 0.5rem;
+  transform: translate3d(6rem, 2rem, 0) rotate(-47deg) skewY(0);
+  background: #000;
+  border-radius: 0.3rem;
+}
+text div:nth-of-type(1) i:nth-of-type(10) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(42.6rem, 0.2rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: -0.2rem 0.15rem 0 #000, -0.5rem 0.2rem 0 -0.1rem #000, -0.7rem 0.35rem 0 -0.1rem #000, -0.9rem 0.5rem 0 -0.1rem #000, -1.1rem 0.6rem 0 -0.15rem #000, -1.3rem 0.7rem 0 -0.2rem #000, 0.2rem -0.1rem 0 #000, -0.4rem 0.7rem 0 #000, -0.5rem 1rem 0 #000;
+}
+text div:nth-of-type(1) i:nth-of-type(10):before {
+  border: 0.6rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-right: 0.6rem solid rgba(255, 255, 255, 0);
+  border-bottom: 0.6rem solid #000;
+  border-radius: 0 0 1.5rem 1.5rem/0 0 1.5rem 1.5rem;
+  width: 2.7rem;
+  height: 5.1rem;
+  transform: translate3d(1.4rem, -0.2rem, 0) rotate(25deg) skewY(-31deg);
+}
+text div:nth-of-type(1) i:nth-of-type(10):after {
+  border: 0.6rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-right: 0.6rem solid rgba(255, 255, 255, 0);
+  border-bottom: none;
+  border-top: 0.6rem solid #000;
+  border-radius: 1.5rem 1.5rem 0 0/1.5rem 4.5rem 0 0;
+  width: 3rem;
+  height: 6.9rem;
+  transform: translate3d(-1.1rem, -0.3rem, 0) rotate(22.2deg) skewY(-31deg);
+}
+text div:nth-of-type(1) i:nth-of-type(11) {
+  width: 3.8rem;
+  height: 4.7rem;
+  transform: translate3d(46.1rem, 0.2rem, 0) rotate(7deg) skewY(-21deg);
+  border-radius: 50%;
+  border: 0.6rem solid #000;
+  border-right-width: 0.5rem;
+}
+text div:nth-of-type(1) i:nth-of-type(11):before {
+  border: 0.7rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-right-color: rgba(255, 255, 255, 0);
+  border-left: 0.6rem solid #000;
+  border-bottom: 0.6rem solid #000;
+  border-radius: 0 0 1.5rem 1.5rem/0 0 1.5rem 1.5rem;
+  width: 2.7rem;
+  height: 4.5rem;
+  transform: translate3d(2.8rem, 0.5rem, 0) rotate(18deg) skewY(4deg);
+}
+text div:nth-of-type(1) i:nth-of-type(11):after {
+  width: 0.5rem;
+  height: 1.5rem;
+  transform: translate3d(-0.9rem, 1.6rem, 0) rotate(35deg);
+  background: #000;
+}
+text div:nth-of-type(1) i:nth-of-type(12) {
+  width: 0.5rem;
+  height: 0.7rem;
+  transform: translate3d(53.1rem, 3.5rem, 0);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: -0.1rem 0.15rem 0 -0.05rem #000, -2.1rem 0.4rem 0 #000, -2.5rem 0.6rem 0 #000, -2.7rem -3.2rem 0 #000;
+}
+text div:nth-of-type(1) i:nth-of-type(12):before {
+  width: 5.5rem;
+  height: 0.8rem;
+  transform: translate3d(-2.8rem, -1.8rem, 0) rotate(-55deg) skewX(-20deg);
+  background: #000;
+  border-radius: 0.1rem 0.2rem 50% 50%/0.1rem 0.2rem 0.6rem 0.4rem;
+}
+text div:nth-of-type(1) i:nth-of-type(12):after {
+  width: 2.5rem;
+  height: 4.2rem;
+  border: 0.7rem solid #000;
+  border-top: 0.2rem solid rgba(255, 255, 255, 0);
+  border-left: 0.2rem solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  transform: translate3d(-0.5rem, -2.9rem, 0) rotate(-5deg) skewY(-31deg) skewX(9deg);
+}
+text div:nth-of-type(2) {
+  transform: translate3d(0, -1.1rem, 0);
+  width: 60rem;
+  height: 10rem;
+}
+text div:nth-of-type(2) i:nth-of-type(1) {
+  transform: rotate(21deg) skewY(-43deg);
+  border: 0.6rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-right: 0.1rem solid rgba(255, 255, 255, 0);
+  border-bottom: 0.6rem solid #000;
+  border-radius: 0 0 1.5rem 1.5rem/0 0 1.5rem 3.3rem;
+  width: 2.7rem;
+  height: 6.1rem;
+}
+text div:nth-of-type(2) i:nth-of-type(1):before {
+  transform: translate3d(1.9rem, 0.8rem, 0) rotate(0deg) skewY(0deg);
+  border: 0.6rem solid #000;
+  border-top-color: rgba(255, 255, 255, 0);
+  border-right: 0.6rem solid rgba(255, 255, 255, 0);
+  border-bottom: 0.6rem solid #000;
+  border-radius: 0 0 1.5rem 1.5rem/0 0 1.5rem 3.3rem;
+  width: 2.5rem;
+  height: 6.1rem;
+}
+text div:nth-of-type(2) i:nth-of-type(1):after {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-right: 0.5rem solid #000;
+  transform: translate3d(-1.8rem, 0rem, 0) rotate(31deg) skewY(0deg);
+  border-radius: 50%;
+}
+text div:nth-of-type(2) i:nth-of-type(2) {
+  transform: translate3d(5rem, 5.2rem, 0);
+  width: 0.6rem;
+  height: 0.7rem;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.1rem -0.3rem 0 0.01rem #000, 1.2rem -4.2rem 0 0.05rem #000, 1.15rem -3.8rem 0 0.05rem #000, 1.1rem -3.4rem 0 0.05rem #000;
+}
+text div:nth-of-type(2) i:nth-of-type(2):before {
+  transform: translate3d(0.9rem, -4.5rem, 0) rotate(20deg) skewY(-21deg);
+  width: 2.8rem;
+  height: 5rem;
+  border-radius: 1.4rem 1.4rem 0 1rem/2rem 1.4rem 0 0.5rem;
+  border: 0.7rem solid #000;
+  border-bottom-color: rgba(255, 255, 255, 0);
+  border-top-width: 0.4rem;
+}
+text div:nth-of-type(2) i:nth-of-type(2):after {
+  transform: translate3d(-2.4rem, -5.5rem, 0) rotate(29deg);
+  width: 2.9rem;
+  height: 6rem;
+  border-radius: 0 0.5rem 0.8rem 0/0 0.5rem 5rem 0;
+  border: 0.5rem solid rgba(255, 255, 255, 0);
+  border-right-color: #000;
+}
+text div:nth-of-type(2) i:nth-of-type(3) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(13.1rem, 2.6rem, 0) rotate(-4deg);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.25rem -0.3rem 0 #000, 0.4rem -0.6rem 0 #000, 0.5rem -0.9rem 0 #000, 0.55rem -1.3rem 0 0.05rem #000, 0.3rem -1.7rem 0 0.05rem #000, 0rem -1.8rem 0 0.05rem #000, -0.3rem -1.8rem 0 #000, -0.6rem -1.7rem 0 #000, -0.9rem -1.6rem 0 #000, 0.4rem 1.65rem 0 -0.1rem #000, -5.6rem 1.7rem 0 0.1rem #000, -5.4rem 2.2rem 0 0.05rem #000, -5.2rem 2.4rem 0 #000, -5rem 2.5rem 0 -0.05rem #000;
+}
+text div:nth-of-type(2) i:nth-of-type(3):before {
+  transform: translate3d(-4.2rem, -2.6rem, 0) rotate(61deg);
+  width: 2.9rem;
+  height: 6.8rem;
+  border-radius: 0 0.6rem 1.2rem 0/0 3rem 5rem 0;
+  border: 0.6rem solid rgba(255, 255, 255, 0);
+  border-right-color: #000;
+}
+text div:nth-of-type(2) i:nth-of-type(3):after {
+  width: 5.5rem;
+  height: 4rem;
+  border: 0.7rem solid #000;
+  border-left-color: rgba(255, 255, 255, 0);
+  border-top: 0.3rem solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  transform: translate3d(-3.1rem, -1.5rem, 0) rotate(93deg) skewY(20deg);
+}
+text div:nth-of-type(2) i:nth-of-type(4) {
+  transform: translate3d(18.5rem, -0.2rem, 0) rotate(24deg) skewY(-34deg);
+  border: 0.6rem solid #000;
+  border-right-color: rgba(255, 255, 255, 0);
+  border-bottom: none;
+  border-top-width: 0.7rem;
+  border-radius: 1.5rem 1.5rem 0 0/1.5rem 3.3rem 0 0;
+  width: 3rem;
+  height: 7.8rem;
+}
+text div:nth-of-type(2) i:nth-of-type(4):before {
+  transform: translate3d(1.5rem, -0.3rem, 0) rotate(0deg) skewY(0deg);
+  border-radius: 0 0.9rem 1.5rem 1.2rem/0 0.9rem 1.5rem 3.3rem;
+  width: 3.15rem;
+  height: 5.5rem;
+  border: 0.7rem solid #000;
+  border-bottom-width: 0.8rem;
+  border-right-width: 0.75rem;
+  border-top-color: rgba(255, 255, 255, 0);
+}
+text div:nth-of-type(2) i:nth-of-type(4):after {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-right: 0.7rem solid #000;
+  transform: translate3d(-1.8rem, -1.1rem, 0) rotate(28deg);
+  border-radius: 50%;
+}
+text div:nth-of-type(2) i:nth-of-type(5) {
+  transform: translate3d(27.1rem, -0.6rem, 0) rotate(24deg) skewY(-34deg);
+  border: 0.6rem solid #000;
+  border-right: 0.2rem solid rgba(255, 255, 255, 0);
+  border-bottom: none;
+  border-top-width: 1rem;
+  border-radius: 2rem 1.5rem 0 0.5rem/3rem 3.3rem 0 0.5rem;
+  width: 3.6rem;
+  height: 7.8rem;
+}
+text div:nth-of-type(2) i:nth-of-type(5):before {
+  transform: translate3d(1.9rem, 0.4rem, 0) rotate(8deg) skewY(-8deg);
+  border-radius: 0 0 2.5rem 3rem/0 0 2.5rem 6rem;
+  width: 3.5rem;
+  height: 5.2rem;
+  border: 0.7rem solid #000;
+  border-bottom-width: 0.6rem;
+  border-right-color: rgba(255, 255, 255, 0);
+  border-top-color: rgba(255, 255, 255, 0);
+}
+text div:nth-of-type(2) i:nth-of-type(5):after {
+  width: 3rem;
+  height: 5.5rem;
+  transform: translate3d(-3.4rem, -2rem, 0) rotate(23deg) skewY(25deg);
+  border-radius: 0 0.9rem 1.5rem 1.2rem/0 0.9rem 1.5rem 3.3rem;
+  border: 0.7rem solid #000;
+  border-top: none;
+  border-left: none;
+}
+text div:nth-of-type(2) i:nth-of-type(6) {
+  width: 0.6rem;
+  height: 0.6rem;
+  transform: translate3d(35.6rem, 1.8rem, 0) rotate(-4deg);
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0.25rem -0.3rem 0 #000, 0.4rem -0.6rem 0 #000, 0.5rem -0.9rem 0 #000, 0.55rem -1.3rem 0 0.05rem #000, 0.3rem -1.7rem 0 0.05rem #000, 0rem -1.8rem 0 0.05rem #000, -0.3rem -1.8rem 0 #000, -0.6rem -1.7rem 0 #000, -0.9rem -1.6rem 0 #000, -1.1rem -1.5rem 0 #000, -4.5rem -1.5rem 0 0.1rem #000, -13.5rem -2.3rem 0 0.1rem #000, -9.7rem -4rem 0 0.2rem #000, 3.2rem 2.5rem 0 0.2rem #000;
+}
+text div:nth-of-type(2) i:nth-of-type(6):before {
+  transform: translate3d(-4.2rem, -2.7rem, 0) rotate(61deg);
+  width: 2.9rem;
+  height: 6.8rem;
+  border-radius: 0 0.6rem 1.2rem 0/0 3rem 5rem 0;
+  border: 0.6rem solid rgba(255, 255, 255, 0);
+  border-right-color: #000;
+}
+text div:nth-of-type(2) i:nth-of-type(6):after {
+  width: 5.5rem;
+  height: 6rem;
+  border: 0.7rem solid #000;
+  border-left-color: rgba(255, 255, 255, 0);
+  border-top: 0.3rem solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  transform: translate3d(-2.6rem, -2.5rem, 0) rotate(93deg) skewY(25deg);
+}
+
+pipe {
+  transform-style: preserve-3d;
+  width: 121rem;
+  height: 56rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(12rem, 15rem, 10rem) rotateY(5deg);
+}
+pipe > i:nth-of-type(1) {
+  width: 46rem;
+  height: 46rem;
+  transform: translate3d(71rem, -9rem, 0) rotate(53deg);
+  overflow: hidden;
+  border-radius: 0 50% 0 0;
+}
+pipe > i:nth-of-type(1) > i:nth-of-type(1) {
+  width: 80rem;
+  height: 40rem;
+  border-radius: 50%;
+  transform: translate3d(-7.75rem, 4.75rem, 0) rotate(-58.5deg);
+  overflow: hidden;
+}
+pipe > i:nth-of-type(1) > i:nth-of-type(1):before {
+  width: 70rem;
+  height: 40rem;
+  border-radius: 50%;
+  transform: translate3d(8rem, 7.5rem, 0) rotate(-14deg);
+  box-shadow: 0 -17rem 0 #000;
+}
+pipe > i:nth-of-type(1) > i:nth-of-type(1):after {
+  width: 128rem;
+  height: 178rem;
+  border-top: 6.5rem solid #956a82;
+  transform: translate3d(0rem, -7.75rem, 0) rotate(302deg);
+  border-radius: 38%;
+  filter: blur(0.75rem);
+  -webkit-mask-image: linear-gradient(116deg, #fff, #fff, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 0));
+  background: rgba(255, 255, 255, 0.01);
+}
+pipe > i:nth-of-type(1) > i:nth-of-type(2) {
+  width: 80rem;
+  height: 40rem;
+  border-radius: 50%;
+  transform: translate3d(-7.75rem, 4.75rem, 0) rotate(-58.5deg);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, #fff, #fff, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 0));
+}
+pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  width: 128rem;
+  height: 173rem;
+  border-top: 4rem solid #cab5c1;
+  transform: translate3d(0rem, -7.5rem, 0) rotate(298deg);
+  border-radius: 38%;
+  filter: blur(0.2rem);
+  background: rgba(255, 255, 255, 0.01);
+}
+pipe > i:nth-of-type(2) {
+  width: 10rem;
+  height: 14rem;
+  transform: translate3d(61.5rem, 13.5rem, 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  overflow: hidden;
+  border-radius: 0.2rem;
+  border-radius: 0 1rem 1rem 0/0 50% 50% 0;
+}
+pipe > i:nth-of-type(2):after {
+  width: 10rem;
+  height: 14rem;
+  transform: translate3d(0, 0, 0);
+  background: linear-gradient(176deg, #52140a, #c88647 13%, #f1e0d8 17%, #f1e0d8 43%, #c88647 48%, #52140a, #000, #000, #52140a);
+  box-shadow: -0.1rem 0 0.15rem -0.1rem #c88647;
+}
+pipe > i:nth-of-type(3) {
+  width: 78rem;
+  height: 90rem;
+  transform: translate3d(1.5rem, -40rem, 0);
+  border-radius: 0 0 65% 31%/0 0 61% 30%;
+  overflow: hidden;
+}
+pipe > i:nth-of-type(3) > i:nth-of-type(1) {
+  box-shadow: -10rem 10rem 0 #000;
+  width: 24rem;
+  height: 30rem;
+  transform: translate3d(32rem, 39rem, 0) rotate(-3deg);
+  border-radius: 0rem 0rem 90% 10%/0rem 0rem 90% 10%;
+}
+pipe > i:nth-of-type(3) > i:nth-of-type(1):before {
+  width: 14rem;
+  height: 10rem;
+  transform: translate3d(-0.25rem, 19.5rem, 0) rotate(-9deg);
+  border-radius: 0 0 10rem 3rem/0 0 4rem 3rem;
+  box-shadow: -0.4rem 3rem 1rem -0.5rem #52140a, 0 12rem 1rem #52140a;
+}
+pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  background: rgba(250, 215, 185, 0.5);
+  width: 10rem;
+  height: 10rem;
+  transform: translate3d(-0.5rem, 30rem, 0);
+  border-radius: 2rem;
+  filter: blur(0.5rem);
+  box-shadow: inset 0 -1rem 0 2rem #52140a;
+  display: none;
+}
+pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  transform: translate3d(1rem, 72rem, 0) rotate(146deg) skew(5deg);
+  width: 74rem;
+  height: 19rem;
+  overflow: hidden;
+  border-radius: 0 0 1rem 1rem/0 0 50% 50%;
+  box-shadow: inset 1rem 0 0 #fad7b9;
+}
+pipe > i:nth-of-type(3) > i:nth-of-type(2) > i {
+  width: 100rem;
+  height: 50rem;
+  background: #000;
+  transform: translate3d(-17rem, -31rem, 0);
+  border-radius: 0 0 0 36rem/0 0 0 3rem;
+  overflow: hidden;
+}
+pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  background: #52140a;
+  width: 43rem;
+  height: 10rem;
+  transform: translate3d(11rem, 40rem, 0);
+  border-radius: 20rem 20rem 2rem 0/2rem 8rem 2rem 0;
+  filter: blur(1rem);
+}
+pipe > i:nth-of-type(3) > i:nth-of-type(2) > i > i {
+  background: #52140a;
+  width: 10rem;
+  height: 10rem;
+  transform: translate3d(42rem, 47rem, 0);
+  border-radius: 50%;
+  filter: blur(1rem);
+}
+pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  width: 30rem;
+  height: 1rem;
+  transform: translate3d(-8rem, 12.75rem, 0) rotate(-180deg);
+  border-radius: 50% 50% 50% 50%/20% 20% 80% 80%;
+  filter: blur(0.3rem);
+  background: #fad7b9;
+  box-shadow: -1rem -0.5rem 0 1rem rgba(250, 215, 185, 0.5);
+  opacity: 0.7;
+}
+pipe > i:nth-of-type(3):after {
+  width: 15rem;
+  height: 1rem;
+  transform: translate3d(34rem, 71.5rem, 0) rotate(-19deg);
+  border-radius: 50% 50% 50% 50%/20% 20% 80% 80%;
+  filter: blur(0.5rem);
+  background: #fad7b9;
+  box-shadow: -1rem -0.5rem 0 1rem rgba(250, 215, 185, 0.5);
+  opacity: 0.7;
+}
+pipe > i:nth-of-type(4) {
+  background: #000;
+  width: 10rem;
+  height: 6.6rem;
+  border-radius: 50%;
+  transform: translate3d(110rem, 2.2rem, -1rem) rotateY(90deg);
+}
+pipe > i:nth-of-type(5) {
+  width: 34rem;
+  height: 50rem;
+  transform: translate3d(1rem, 1rem, 0);
+  overflow: hidden;
+}
+pipe > i:nth-of-type(5):before {
+  width: 32.5rem;
+  height: 59rem;
+  transform: translate3d(0.5rem, -14rem, 0);
+  background: radial-gradient(50% 50% at 25% 48%, #52140a, #52140a, #3c1314, #000);
+  border-radius: 40%/50%;
+  box-shadow: inset 0 0 3rem #000, inset 0 0 4rem rgba(0, 0, 0, 0.5);
+}
+pipe > i:nth-of-type(5):after {
+  width: 10rem;
+  height: 40rem;
+  transform: translate3d(3rem, -5rem, 0);
+  border-radius: 50% 1rem 5rem 50%/50% 50% 5rem 50%;
+  background: radial-gradient(rgba(250, 215, 185, 0.8), rgba(160, 99, 83, 0.6));
+  filter: blur(1rem);
+  box-shadow: inset 0 0 3rem rgba(255, 106, 0, 0.5);
+}
+pipe > i:nth-of-type(6) {
+  width: 34rem;
+  height: 50rem;
+  transform: translate3d(1rem, 1rem, 0);
+  overflow: hidden;
+}
+pipe > i:nth-of-type(6):before {
+  width: 32.5rem;
+  height: 59rem;
+  transform: translate3d(0.5rem, -14rem, 0);
+  background: radial-gradient(50% 50% at 25% 48%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 65%, #3c1314, #9b371e, #ff6a00, #ff6a00 85%, #000, #000);
+  border-radius: 40%/50%;
+  opacity: 0.1;
+  -webkit-mask-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #fff);
+}
+pipe > i:nth-of-type(6):after {
+  width: 32.5rem;
+  height: 60rem;
+  transform: translate3d(5rem, -14rem, 0);
+  border-radius: 30%/50%;
+  border: 4rem solid rgba(255, 255, 255, 0);
+  border-left-color: #fad7b9;
+  filter: blur(0.2rem);
+  -webkit-mask-image: linear-gradient(#fff, #fff, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 0));
+}
+pipe > i:nth-of-type(7) {
+  background: linear-gradient(70deg, #fad7b9, #b48072);
+  width: 28.5rem;
+  height: 28.5rem;
+  border-radius: 50%;
+  transform: translate3d(3.5rem, -13.5rem, 0) rotateX(90deg);
+}
+pipe > i:nth-of-type(7):before {
+  background: linear-gradient(90deg, #000, #000, rgba(180, 128, 114, 0.5), #000), #000;
+  width: 18.5rem;
+  height: 13rem;
+  border-radius: 50%;
+  transform: translate3d(5rem, 8rem, 0);
+}
+pipe > i:nth-of-type(7):after {
+  width: 27.5rem;
+  height: 10rem;
+  background: #000;
+  transform: translate3d(0.5rem, 0rem, -0.5rem) rotateX(90deg) skewX(10deg);
+  transform-origin: 50% 100%;
+  border-radius: 50% 50% 0 0;
+}
+pipe > i:nth-of-type(8) {
+  width: 4rem;
+  height: 4rem;
+  transform: translate3d(35.5rem, 31rem, 0);
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(250, 215, 185, 0.5), rgba(255, 255, 255, 0));
+  box-shadow: -1rem 0 2rem rgba(250, 215, 185, 0.2), -1rem 0 2rem rgba(250, 215, 185, 0.2), -1rem 0 2rem rgba(250, 215, 185, 0.2);
+}
+pipe > i:nth-of-type(8):after {
+  width: 50rem;
+  height: 43rem;
+  transform: translate3d(-20.5rem, -40rem, 0) rotate(-33deg);
+  border-radius: 0 2rem 20rem 20rem/0 2rem 5rem 16rem;
+  filter: blur(0.7rem);
+  border: 5rem solid rgba(255, 255, 255, 0);
+  border-bottom-color: #fad7b9;
+  opacity: 0.4;
+}
+pipe > i:nth-of-type(9) {
+  width: 21rem;
+  height: 4rem;
+  transform: translate3d(59rem, 24.2rem, 0) rotate(-45deg);
+  background: #000;
+}
+pipe > i:nth-of-type(9):before {
+  background: #000;
+  width: 10rem;
+  height: 3rem;
+  transform: translate3d(-47rem, -25rem, 0) rotate(74deg);
+  border-radius: 50%/1rem 1rem;
+}
+
+x:nth-of-type(1):hover ~ art > rotate > xaxis {
+  transform: rotateY(-13.5deg);
+}
+
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis {
+  transform: rotateX(9deg);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(1.5rem, -13rem, 0);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(4.5rem, -13rem, 0);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(0rem, -8.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(35rem, 70.5rem, 0) rotate(-25deg) scaleX(1.0333333333);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(-7.5rem, 26rem, 0);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):before {
+  opacity: 0.1111111111rem;
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-11rem, 14.3333333333rem, 0) rotate(-181deg);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 42.3333333333rem, 0);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(36rem, 30rem, 0);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -41.2rem, 0) rotate(-33deg);
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(62.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 1rem 1rem 0/0 50% 50% 0;
+}
+x:nth-of-type(1):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 1rem 1rem/0 0 50% 50%;
+}
+
+x:nth-of-type(2):hover ~ art > rotate > xaxis {
+  transform: rotateY(-4.5deg);
+}
+
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis {
+  transform: rotateX(9deg);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(3rem, -13rem, 0);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(6rem, -13rem, 0);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(1rem, -8.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(36rem, 71rem, 0) rotate(-24deg) scaleX(0.9666666667);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(-6.5rem, 27rem, 0);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):before {
+  opacity: 0.2222222222rem;
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-10rem, 13.6666666667rem, 0) rotate(-181deg);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 41.6666666667rem, 0);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(37rem, 31rem, 0);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -41.4rem, 0) rotate(-33deg);
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(63.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 2rem 2rem 0/0 50% 50% 0;
+}
+x:nth-of-type(2):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 2rem 2rem/0 0 50% 50%;
+}
+
+x:nth-of-type(3):hover ~ art > rotate > xaxis {
+  transform: rotateY(4.5deg);
+}
+
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis {
+  transform: rotateX(9deg);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(4.5rem, -13rem, 0);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(7.5rem, -13rem, 0);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(2rem, -8.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(37rem, 71.5rem, 0) rotate(-23deg) scaleX(0.9);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(-5.5rem, 28rem, 0);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):before {
+  opacity: 0.3333333333rem;
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-9rem, 13rem, 0) rotate(-181deg);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 41rem, 0);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(38rem, 32rem, 0);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -41.6rem, 0) rotate(-33deg);
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(64.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 3rem 3rem 0/0 50% 50% 0;
+}
+x:nth-of-type(3):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 3rem 3rem/0 0 50% 50%;
+}
+
+x:nth-of-type(4):hover ~ art > rotate > xaxis {
+  transform: rotateY(-9deg);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(7) {
+  transform: translate3d(3.5rem, -13.5rem, --1rem) rotateX(90deg);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(-1.02rem, -14rem, 0);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(4.08rem, -14rem, 0);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(-1rem, -7.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(34rem, 71rem, 0) rotate(-19deg) scaleX(0.9647058824);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1) {
+  transform: translate3d(32rem, 39rem, 0) rotate(-3deg);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(-1.5rem, 30rem, 0);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-8rem, 13.3333333333rem, 0) rotate(-180deg);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 41.3333333333rem, 0);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(35rem, 31rem, 0);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -40.8rem, 0) rotate(-33deg);
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(60.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 0rem 0rem 0/0 50% 50% 0;
+}
+x:nth-of-type(4):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 0rem 0rem/0 0 50% 50%;
+}
+
+x:nth-of-type(5):hover ~ art > rotate > xaxis {
+  transform: rotateY(0deg);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(7) {
+  transform: translate3d(3.5rem, -13.5rem, -0rem) rotateX(90deg);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(0rem, -14rem, 0);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(5.1rem, -14rem, 0);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(0rem, -7.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(34rem, 72rem, 0) rotate(-19deg) scaleX(0.9058823529);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1) {
+  transform: translate3d(32rem, 39rem, 0) rotate(-3deg);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(-0.5rem, 30.5rem, 0);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-7rem, 12.6666666667rem, 0) rotate(-180deg);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 40.6666666667rem, 0);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(36rem, 32rem, 0);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -41rem, 0) rotate(-33deg);
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(61.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 1.5rem 1.5rem 0/0 50% 50% 0;
+}
+x:nth-of-type(5):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 1.5rem 1.5rem/0 0 50% 50%;
+}
+
+x:nth-of-type(6):hover ~ art > rotate > xaxis {
+  transform: rotateY(9deg);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(7) {
+  transform: translate3d(3.5rem, -13.5rem, -1rem) rotateX(90deg);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(1.02rem, -14rem, 0);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(6.12rem, -14rem, 0);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(1rem, -7.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(34rem, 73rem, 0) rotate(-19deg) scaleX(0.8470588235);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1) {
+  transform: translate3d(32rem, 39rem, 0) rotate(-3deg);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(0.5rem, 31rem, 0);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-6rem, 12rem, 0) rotate(-180deg);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 40rem, 0);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(37rem, 33rem, 0);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -41.2rem, 0) rotate(-33deg);
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(62.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 3rem 3rem 0/0 50% 50% 0;
+}
+x:nth-of-type(6):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 3rem 3rem/0 0 50% 50%;
+}
+
+x:nth-of-type(7):hover ~ art > rotate > xaxis {
+  transform: rotateY(-13.5deg);
+}
+
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis {
+  transform: rotateX(-9deg);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):before {
+  transform: translate3d(32rem, 40rem, 0) rotate(-3deg);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(7) {
+  transform: translate3d(3.5833333333rem, -13.5rem, 0.75rem) rotateX(90deg);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(-2rem, -16rem, 0);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(4rem, -16rem, 0);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(0rem, -6.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(34rem, 73rem, 0) rotate(-19deg) scaleX(0.7333333333);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(-1.5rem, 32rem, 0);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):before {
+  opacity: 0.7777777778rem;
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-5rem, 12.3333333333rem, 0) rotate(-180deg);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 40.3333333333rem, 0);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(36rem, 32rem, 0);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -41.4rem, 0) rotate(-33deg);
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(61.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 0rem 0rem 0/0 50% 50% 0;
+}
+x:nth-of-type(7):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 0rem 0rem/0 0 50% 50%;
+}
+
+x:nth-of-type(8):hover ~ art > rotate > xaxis {
+  transform: rotateY(-4.5deg);
+}
+
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis {
+  transform: rotateX(-9deg);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):before {
+  transform: translate3d(32rem, 40rem, 0) rotate(-3deg);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(7) {
+  transform: translate3d(3.5rem, -13.5rem, 0.75rem) rotateX(90deg);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(0rem, -16rem, 0);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(6rem, -16rem, 0);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(1rem, -6.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(34rem, 74rem, 0) rotate(-19deg) scaleX(0.6666666667);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(-0.5rem, 33rem, 0);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):before {
+  opacity: 0.8888888889rem;
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-4rem, 11.6666666667rem, 0) rotate(-180deg);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 39.6666666667rem, 0);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(37rem, 33rem, 0);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -41.6rem, 0) rotate(-33deg);
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(62.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 1rem 1rem 0/0 50% 50% 0;
+}
+x:nth-of-type(8):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 1rem 1rem/0 0 50% 50%;
+}
+
+x:nth-of-type(9):hover ~ art > rotate > xaxis {
+  transform: rotateY(4.5deg);
+}
+
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis {
+  transform: rotateX(-9deg);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):before {
+  transform: translate3d(32rem, 40rem, 0) rotate(-3deg);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(7) {
+  transform: translate3d(3.4166666667rem, -13.5rem, 0.75rem) rotateX(90deg);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):before {
+  transform: translate3d(2rem, -16rem, 0);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(6):after {
+  transform: translate3d(8rem, -16rem, 0);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(1) > i:nth-of-type(2):after {
+  transform: translate3d(2rem, -6.5rem, 0) rotate(298deg);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3):after {
+  transform: translate3d(34rem, 75rem, 0) rotate(-19deg) scaleX(0.6);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):after {
+  transform: translate3d(0.5rem, 34rem, 0);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(1):before {
+  opacity: 1rem;
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2):after {
+  transform: translate3d(-3rem, 11rem, 0) rotate(-180deg);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) > i:before {
+  transform: translate3d(11rem, 39rem, 0);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8) {
+  transform: translate3d(38rem, 34rem, 0);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(8):after {
+  transform: translate3d(-20.5rem, -41.8rem, 0) rotate(-33deg);
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(2) {
+  transform: translate3d(63.5rem, 11.5rem 0) rotate(-36deg) skewX(3deg) skewY(3deg);
+  border-radius: 0 2rem 2rem 0/0 50% 50% 0;
+}
+x:nth-of-type(9):hover ~ art > rotate > xaxis > yaxis > pipe > i:nth-of-type(3) > i:nth-of-type(2) {
+  border-radius: 0 0 2rem 2rem/0 0 50% 50%;
+}
+
+sig {
+  font-size: 0.5rem;
+  color: #000;
+  width: 10em;
+  top: 95% !important;
+  left: 95% !important;
+  transform: skewX(10deg) scaleY(0.45) rotate(2deg);
+}
+sig,
+sig * {
+  height: 9.25em;
+  overflow: hidden;
+  border-radius: 0.5em;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+sig:before,
+sig *:before {
+  width: 5em;
+  height: 5em;
+  background: currentColor;
+  transform: translate3d(-2.5em, 0, 0) rotate(-45deg);
+  box-shadow: -3em 3em 0 0 currentColor;
+  border-radius: 0.5em 2em 0.5em 2em;
+  content: "";
+  display: block;
+}
+sig * {
+  width: 5em;
+  transform: translate3d(3.75em, 0, 0) scaleY(0.95);
+  display: block !important;
+}
+sig *:before {
+  transform: translate3d(-3em, -2em, 0) rotate(-45deg);
+  box-shadow: -3em 3em 0 0 currentColor, -6em 6em 0 0 currentColor;
+  border-radius: 0.5em;
+}/*# sourceMappingURL=STYLE.css.map */
